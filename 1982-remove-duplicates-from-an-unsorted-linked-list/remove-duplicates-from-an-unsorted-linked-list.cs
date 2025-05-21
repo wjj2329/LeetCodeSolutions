@@ -28,7 +28,6 @@ public class Solution {
         bool isDeleting = false;
         ListNode previous = null;
         ListNode keeping = null;
-        Console.WriteLine(needRemoving.Count);
         while(curr!=null){
             if(!isDeleting){
                 if(needRemoving.Contains(curr.val)){
@@ -37,7 +36,6 @@ public class Solution {
                 }
             }else{
                 if(!needRemoving.Contains(curr.val)){
-                    Console.WriteLine(keeping.val +" "+curr.val);
                     isDeleting = false;
                     keeping.next = curr;
                 }
