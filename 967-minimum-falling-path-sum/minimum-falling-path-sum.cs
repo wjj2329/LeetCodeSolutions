@@ -2,7 +2,7 @@ public class Solution {
     public int MinFallingPathSum(int[][] matrix) {
         for(int i = matrix.Length-2; i>-1; i--){
             for(int s = 0; s<matrix[i].Length; s++){
-                int min = 2147483647;
+                int min = int.MaxValue;
                 if(s!=0){
                 min = Math.Min(min, matrix[i+1][s-1]);
                 }
