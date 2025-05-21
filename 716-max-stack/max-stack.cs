@@ -58,7 +58,7 @@ public class MaxStack {
         if(myDictionary[value].Count==0){
             myDictionary.Remove(value);
         }
-        //set deleted previous to point to delted next
+        //set deleted previous to point to deleted next
         if(deleted.previous!=null){
             deleted.previous.next = deleted.next;
         }
