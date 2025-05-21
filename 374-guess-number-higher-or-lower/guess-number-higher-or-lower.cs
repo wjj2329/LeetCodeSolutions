@@ -13,18 +13,15 @@ public class Solution : GuessGame {
         int lower = 0;
         while(lower<=upper){
             int num = lower+(upper - lower) /2;
-            Console.WriteLine(num);
             int result = guess(num);
             if(result == 0){
                 return num;
             }
             if(result == -1){
                 upper =num-1;
-                Console.WriteLine("I Set upper to "+upper);
             }
             if(result == 1){
                 lower = num+1;
-                Console.WriteLine("I Set lower to "+lower);
             }
         }
         return -1;
