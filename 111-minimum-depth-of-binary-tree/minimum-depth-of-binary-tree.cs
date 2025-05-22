@@ -14,7 +14,7 @@
 public class Solution {
     int min;
     public void Recurse(TreeNode curr, int depth){
-        if(depth>min){ //don't waste time checking path that's can be smaller
+        if(depth>min){ //don't waste time checking path that can't be smaller
             return;
         }
         if(curr.left == null && curr.right == null){
