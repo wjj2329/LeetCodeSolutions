@@ -12,7 +12,7 @@
  * }
  */
 public class Solution {
-    int min = int.MaxValue;
+    int min;
     public void Recurse(TreeNode curr, int depth){
         if(curr.left == null && curr.right == null){
             min = Math.Min(depth, min);
