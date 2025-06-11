@@ -28,7 +28,6 @@ public class Solution {
         sb.Append(curr.val);
         if(curr.left == null && curr.right == null)
         {
-            Console.WriteLine(sb.ToString());
             var result= StringToInt(sb.ToString());
             sb.Length--;
             return result;
